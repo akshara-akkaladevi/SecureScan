@@ -1,16 +1,12 @@
-<h1 align="center">f1nd3r</h1>
+<h1 align="center">SecureScan</h1>
 
-<div align="center">
-<img style="margin: 100px;" src="https://github.com/gaganmalvi/f1nd3r/blob/main/assets/screenshot.PNG"/>
-</div>
+
 
 # Problem Statement
 Malware has become so common these days that there are a whopping 300 million hacking cases each day just in the US computer systems. Malware attacks cost companies billions every year and it leads to a data breach on top of everything. The effect of data leakage from a government or defence organization is very detrimental. Computer Scientists have come up with rudimentary ways that prove useful only against a set of known viruses that are there in the registry. In order to extend its power to detect any new malware that gets introduced the system has to adapt and learn the nature of a typical malware. This project aims to create a malware detection and analysis system backed by Artificial Intelligence that can potentially recognize any new malware by following a dynamic approach. Our approach is an implementation of a deep neural network for a binary classification task in which the goal was to distinguish correctly whether the file is benign or malicious, given features extracted from portable executables (PEs) files to detect and alert the user when the system is infected with an entirely new kind that it has never seen before.
 
 # Project Structure
-<div align="center">
-<img style="margin: 100px;" src="https://github.com/gaganmalvi/f1nd3r/blob/main/assets/arch-diagram.jpg"/>
-</div>
+
 
 ## 1. Static HTML/CSS/JS
 This module consists of all the static HTML/CSS/JS that makes up the frontend UI of the Web App. This is statically served at the root endpoint using the FastAPI Python web framework. Since this is a small application, we use server side rendering for code manageability. 
@@ -20,9 +16,7 @@ A model was trained using Convolutional Neural Networks (CNN) on the open source
 We used the FastAPI web framework that run on a uvicorn server to create an API to run the model and also to serve the frontend. The model is run using Tensorflow library for python at the endpoint /predict. You can run the model with this endpoint by uploading a file here. However, the frontend makes it easier by providing an easy-to-use file picker and uploading interface. It also grabs the result and displays it in an aesthetically pleasing way.
 
 # Deeplearning Model
-<div align="center">
-<img style="margin: 100px;" src="https://github.com/gaganmalvi/f1nd3r/blob/main/assets/model-description.jpg"/>
-</div>
+
 
 ## 1.	Convert features into dataset
 Raw features are extracted to JSON format and included in the publicly available dataset. Vectorized features can be produced from these raw features and saved in binary format from which they can be converted to CSV, dataframe, or any other format
@@ -57,7 +51,7 @@ The model was saved in .h5 format and exported to be used in the webapp.
 
 
 To execute the project from GitHub:
--	Clone the Repository with `git clone https://github.com/athxrva1/F1ND3R`
+-	Clone the Repository with `git clone https://github.com/akshara-akkaladevi/SecureScan`
 -	Install all the dependencies in requirements.txt with `pip install –r requirements.txt`
 -	Run main.py using `python main.py`
 -	Go to the url where it’s running on your localhost. (Will be printed on the console)
