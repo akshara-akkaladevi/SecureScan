@@ -1,0 +1,15 @@
+fastapi
+uvicorn
+jinja2
+pydantic
+python-multipart
+tensorflow-cpu
+scikit-learn
+numpy
+anyio
+idna
+tqdm
+pandas
+lightgbm
+lief
+git+https://github.com/elastic/ember.git@master
